@@ -4,24 +4,24 @@
 ** M. A. Alekseyev, Computing the Inverses, their Power Sums, and Extrema for Euler's Totient and Other Multiplicative Functions. Journal of Integer Sequences 19 (2016), Article 16.5.2
 ** https://cs.uwaterloo.ca/journals/JIS/VOL19/Alekseyev/alek5.html
 
-** invphi(n,U=oo)               computes all solutions <= U to the equation eulerphi(x)=n with respect to x.
+** invphi(n, U=oo)              computes all solutions x <= U to the equation eulerphi(x) = n.
 ** invphiNum(n)                 equivalent to but faster than #invphi(n).
-** invphiMin(n,k=1)             equivalent to but faster than vecextract(invphi(n),"1..k").
+** invphiMin(n, k=1)            equivalent to but faster than vecextract(invphi(n),"1..k").
 ** invphiMax(n)                 equivalent to but faster than vecmax(invphi(n)).
 
-** invsigma(n,k=1,U=oo)         computes all solutions <= U to the equation sigma(x,k)=n with respect to x. If k is omitted, it's assumed that k=1.
-** invsigmaNum(n,k)             equivalent to but faster than #invsigma(n,k).
-** invsigmaMin(n,k)             equivalent to but faster than vecmin(invsigma(n,k)).
-** invsigmaMax(n,k)             equivalent to but faster than vecmax(invsigma(n,k)).
+** invsigma(n, k=1, U=oo)       computes all solutions x <= U to the equation sigma(x,k) = n. If k is omitted, it's assumed that k=1.
+** invsigmaNum(n, k)            equivalent to but faster than #invsigma(n,k).
+** invsigmaMin(n, k)            equivalent to but faster than vecmin(invsigma(n,k)).
+** invsigmaMax(n, k)            equivalent to but faster than vecmax(invsigma(n,k)).
 
-** invphitau(n,m)               computes all solutions to the system { eulerphi(x)=n, numdiv(x)=m } with respect to x.
-** invphitauNum(n,m)            equivalent to but faster than #invphitau(n,m).
-** invphitauMin(n,m)            equivalent to but faster than vecmin(invphitau(n,m)).
-** invphitauMax(n,m)            equivalent to but faster than vecmax(invphitau(n,m)).
+** invphitau(n, m)              computes all solutions x to the system { eulerphi(x) = n, numdiv(x) = m }.
+** invphitauNum(n, m)           equivalent to but faster than #invphitau(n,m).
+** invphitauMin(n, m)           equivalent to but faster than vecmin(invphitau(n,m)).
+** invphitauMax(n, m)           equivalent to but faster than vecmax(invphitau(n,m)).
 
-** invpsi(n,U=oo)               computes all solutions <= U to the equation dedekind_psi(x)=n with respect to x.
+** invpsi(n, U=oo)              computes all solutions x <= U to the equation dedekind_psi(x) = n.
 ** invpsiNum(n)                 equivalent to but faster than #invpsi(n).
-** invpsiMin(n,k=1)             equivalent to but faster than vecextract(invpsi(n),"1..k").
+** invpsiMin(n, k=1)            equivalent to but faster than vecextract(invpsi(n),"1..k").
 ** invpsiMax(n)                 equivalent to but faster than vecmax(invpsi(n)).
 
 
